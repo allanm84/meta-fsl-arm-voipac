@@ -10,10 +10,10 @@ require recipes-kernel/linux/linux-dtb.inc
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "3.14-1.0.x-mx6-tinyrex"
+SRCBRANCH = "imxtinyrex_3.14.28"
 LOCALVERSION = "-yocto"
-SRCREV = "28a6ec7b6b4aca857a71ec70218c9b647d325f28"
-KERNEL_SRC ?= "git://github.com/voipac/linux-fslc.git;protocol=git"
+SRCREV = "ea3b44e31366756014ba988bd231f6324536febe"
+KERNEL_SRC ?= "git://github.com/allanm84/linux-imx.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 
 DEFAULT_PREFERENCE = "1"              

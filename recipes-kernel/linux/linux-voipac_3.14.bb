@@ -12,7 +12,7 @@ DEPENDS += "lzop-native bc-native"
 
 SRCBRANCH = "imxtinyrex_3.14.28"
 LOCALVERSION = "-yocto"
-SRCREV = "ea3b44e31366756014ba988bd231f6324536febe"
+SRCREV = "${AUTOREV}"
 KERNEL_SRC ?= "git://github.com/allanm84/linux-imx.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 
